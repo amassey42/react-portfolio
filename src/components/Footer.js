@@ -15,6 +15,10 @@ export default function Footer(){
           <a href="https://github.com/amassey42" target="_blank" rel="noreferrer">
             GitHub
           </a>
+          |
+          <a href="https://stackoverflow.com/users/20686488/amassey42" target="_blank" rel="noreferrer">
+            StackOverflow
+          </a>
                 </p>
             </div>
         </footer>

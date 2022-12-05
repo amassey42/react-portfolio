@@ -1,14 +1,13 @@
-import React from 'react';
+// import React from 'react';
+// // import Projects from './Projects'
 
-export default function Portfolio(){
-    return(
-        <div>
-            {/* about me */}
-            <h1>Andrew's Portfolio</h1>
-            {/* paragraph about myself */}
-            <p>
-                random stuff Here
-            </p>
-        </div>
-    )
-}
+// export default function Portfolio(){
+//     return(
+//         <>
+//         <h1>My Portfolio</h1>
+//         <div>
+//             <Projects />
+//         </div>
+//         </>
+//     )
+// }

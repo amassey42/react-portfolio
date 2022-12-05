@@ -4,8 +4,9 @@ import '../styles/Header.css';
 export default function Header({ currentPage, handlePageChange }) {
     return (
         <div className='Header'>
-            <ul>
-                <li>
+            <h1>Andrew's Portfolio</h1>
+            <ul className="nav nav-tabs">
+                <li className="nav-item">
                     <a
                         href="/"
                         onClick={() => handlePageChange('Home')}
@@ -14,7 +15,7 @@ export default function Header({ currentPage, handlePageChange }) {
                         About Me
                     </a>
                 </li>
-                <li>
+                <li className="nav-item">
                     <a
                         href="#portfolio"
                         onClick={() => handlePageChange('Portfolio')}
@@ -23,7 +24,7 @@ export default function Header({ currentPage, handlePageChange }) {
                         Portfolio
                     </a>
                 </li>
-                <li>
+                <li className="nav-item">
                     <a
                         href="#contact"
                         onClick={() => handlePageChange('Contact')}
@@ -32,7 +33,7 @@ export default function Header({ currentPage, handlePageChange }) {
                         Contact
                     </a>
                 </li>
-                <li>
+                <li className="nav-item">
                     <a
                         href="#resume"
                         onClick={() => handlePageChange('Resume')}
@@ -42,7 +43,6 @@ export default function Header({ currentPage, handlePageChange }) {
                     </a>
                 </li>
             </ul>
-            <hr/>
         </div>
     )
 }
