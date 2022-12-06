@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 README-copy.md
+
+# Local Netlify folder
+.netlify
