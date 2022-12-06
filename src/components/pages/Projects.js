@@ -1,12 +1,13 @@
 // Maps out projects to display on portfolio page.
-import react from 'react';
+import React from 'react';
 import gameHoard from '../../assets/trade_wizard.PNG'
 import workDay from '../../assets/work-day.PNG'
 import notetaker from '../../assets/notetaker.PNG'
 import quiz from '../../assets/quiz.PNG'
 import weather from '../../assets/weather.PNG'
 import techblog from '../../assets/techblog.PNG'
-
+import Card from "react-bootstrap/Card";
+import '../../styles/Projects.css'
 
 const projects = [
     {
@@ -52,5 +53,42 @@ const projects = [
         gitHub: "https://github.com/amassey42/tech-blog"
     },
 ];
+
+
+
+
+export default function project(){
+    const cards = projects.map((p,i)=>{
+        return(
+            <div className="pageNames">
+        <li className="projList" key={i}>
+          <Card style={{ width: "30rem" }}>
+            <div>
+              <Card.Link target="_blank" href={p.deployedLink}>
+                <Card.Img
+                  className="projImg border"
+                  variant="top"
+                  src={p.image}
+                  height="280"
+                />
+              </Card.Link>
+            </div>
+            <Card.Body>
+              <Card.Title>{p.projectName}</Card.Title>
+              <Card.Text>{p.description}</Card.Text>
+              <Card.Link target="_blank" href={p.deployedLink}>
+                Deployment
+              </Card.Link>
+              <Card.Link target="_blank" href={p.gitHub}>
+                GitHub
+              </Card.Link>
+            </Card.Body>
+          </Card>
+        </li>
+      </div>
+        )
+    })
+    return <ul className='ulForCards'>{cards}</ul>
+}
 
 
