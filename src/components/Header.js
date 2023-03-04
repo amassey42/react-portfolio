@@ -24,7 +24,7 @@ export default function Header({ currentPage, handlePageChange }) {
                         Portfolio
                     </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <a
                         href="#contact"
                         onClick={() => handlePageChange('Contact')}
@@ -32,7 +32,7 @@ export default function Header({ currentPage, handlePageChange }) {
                     >
                         Contact
                     </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                     <a
                         href="#resume"
